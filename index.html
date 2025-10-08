@@ -20,12 +20,14 @@
           alt="Banner do Prato de Omelette"
         />
       </div>
-      
+
       <div class="content">
         <section class="hero">
           <h1>Receita simples de omelete</h1>
           <p>
-            Um prato fácil e rápido, perfeito para qualquer refeição. Este omelete clássico combina ovos batidos e cozidos à perfeição, com recheio opcional de queijo, legumes ou carnes à sua escolha.
+            Um prato fácil e rápido, perfeito para qualquer refeição. Este
+            omelete clássico combina ovos batidos e cozidos à perfeição, com
+            recheio opcional de queijo, legumes ou carnes à sua escolha.
           </p>
           <article>
             <!-- Tempo de preparação -->
@@ -44,93 +46,157 @@
           </article>
         </section>
 
-        <main> <!-- Conteúdo principal -->
-          <section class="ingredients">
-            <!-- Ingredientes -->
-            <h2>Ingredientes</h2>
-            <ul>
-              <li>
-                <p>2-3 ovos grandes</p>
-              </li>
-              <li>
-                <p>Sal, a gosto</p>
-              </li>
-              <li>
-                <p>Pimenta, a gosto</p>
-              </li>
-              <li>
-                <p>1 colher de sopa de manteiga ou óleo</p>
-              </li>
-              <li>
-                <p>
-                  Recheios opcionais: queijo, vegetais em cubos, carnes cozidas, ervas
-                </p>
-              </li>
-            </ul>
+        <main>
+          <!-- Conteúdo principal -->
+          <section class="ingredients"> <!-- Ingredientes -->
+            <div class="labels">
+              <label for="cbox1">
+                <h2>Ingredientes</h2>
+              </label>
+              <input type="checkbox" id="cbox1" onclick="openClose()"/>
+              <label for="cbox1">
+                <img
+                  src="./assets/images/fechado.png"
+                  width="30px"
+                  height="30px"
+                  alt="Icone para abrir/fechar ingredientes"
+                  id="iconOC1"
+                />
+              </label>
+            </div>
+            <div id="conttIngr">
+              <ul>
+                <li>
+                  <p>2-3 ovos grandes</p>
+                </li>
+                <li>
+                  <p>Sal, a gosto</p>
+                </li>
+                <li>
+                  <p>Pimenta, a gosto</p>
+                </li>
+                <li>
+                  <p>1 colher de sopa de manteiga ou óleo</p>
+                </li>
+                <li>
+                  <p>
+                    Recheios opcionais: queijo, vegetais em cubos, carnes
+                    cozidas, ervas
+                  </p>
+                </li>
+              </ul>
+            </div>
           </section>
-          <section class="instructions">
-            <!-- Instruções -->
-            <h2>Introduções</h2>
-            <ul>
-              <li>
-                <p>
-                  <strong>Bata os ovos</strong>: Em uma tigela, bata os ovos com uma pitada de sal e pimenta até que estejam bem misturados Você pode adicionar uma colher de sopa de água ou leite para uma textura mais fofa.
-                </p>
-              </li>
-              <li>
-                <p>
-                  <strong>Aqueça a panela</strong>: Aqueça uma frigideira antiaderente em fogo médio e adicione manteiga ou óleo.
-                </p>
-              </li>
-              <li>
-                <p>
-                  <strong>Cozinhe a omelete</strong>: Assim que a manteiga derreter e borbulhar, despeje os ovos. Incline a panela para garantir que os ovos cubram a superfície uniformemente.
-                </p>
-              </li>
-              <li>
-                <p>
-                  <strong>Adicione recheios (opcional)</strong>: Quando os ovos começarem a firmar nas bordas, mas ainda estiverem um pouco moles no meio, polvilhe o recheio escolhido sobre metade da omelete.
-                </p>
-              </li>
-              <li>
-                <p>
-                  <strong>Dobre e sirva</strong>: Enquanto a omelete cozinha, levante cuidadosamente uma das bordas e dobre-a sobre o recheio. Deixe cozinhar por mais um minuto e, em seguida, deslize-a para um prato.
-                </p>
-              </li>
-              <li>
-                <p>
-                  <strong>Aproveitar</strong>: Sirva quente, com mais sal e pimenta, se necessário.
-                </p>
-              </li>
-            </ul>
+          <section class="instructions"> <!-- Instruções -->
+            <div class="labels">
+              <label for="cbox2">
+                <h2>Introduções</h2>
+              </label>
+              <input type="checkbox" id="cbox2" onclick="openClose()"/>
+              <label for="cbox2">
+                <img
+                  src="./assets/images/fechado.png"
+                  width="30px"
+                  height="30px"
+                  alt="Icone para abrir/fechar Instruções"
+                  id="iconOC2"
+                />
+              </label>
+            </div>
+
+            <div id="conttInst">
+              <ul>
+                <li>
+                  <p>
+                    <strong>Bata os ovos</strong>: Em uma tigela, bata os ovos
+                    com uma pitada de sal e pimenta até que estejam bem
+                    misturados Você pode adicionar uma colher de sopa de água ou
+                    leite para uma textura mais fofa.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <strong>Aqueça a panela</strong>: Aqueça uma frigideira
+                    antiaderente em fogo médio e adicione manteiga ou óleo.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <strong>Cozinhe a omelete</strong>: Assim que a manteiga
+                    derreter e borbulhar, despeje os ovos. Incline a panela para
+                    garantir que os ovos cubram a superfície uniformemente.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <strong>Adicione recheios (opcional)</strong>: Quando os
+                    ovos começarem a firmar nas bordas, mas ainda estiverem um
+                    pouco moles no meio, polvilhe o recheio escolhido sobre
+                    metade da omelete.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <strong>Dobre e sirva</strong>: Enquanto a omelete cozinha,
+                    levante cuidadosamente uma das bordas e dobre-a sobre o
+                    recheio. Deixe cozinhar por mais um minuto e, em seguida,
+                    deslize-a para um prato.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <strong>Aproveitar</strong>: Sirva quente, com mais sal e
+                    pimenta, se necessário.
+                  </p>
+                </li>
+              </ul>
+            </div>
           </section>
-          <section class="nutrition">
-            <!-- Nutrição -->
-            <h2>Nutrição</h2>
-            <p>
-              A tabela abaixo mostra os valores nutricionais por porção sem os recheios adicionais.
-            </p>
-            <ul>
-              <li>
-                <h3>Calorias</h3>
-                <span>277kcal</span>
-              </li>
-              <li>
-                <h3>Carboidrato</h3>
-                <span>0g</span>
-              </li>
-              <li>
-                <h3>Proteina</h3>
-                <span>20g</span>
-              </li>
-              <li>
-                <h3>Gordura</h3>
-                <span>22g</span>
-              </li>
-            </ul>
+          <section class="nutrition"> <!-- Nutrição -->
+            <div class="labels">
+              <label for="cbox3">
+                <h2>Nutrição</h2>
+              </label>
+              <input type="checkbox" id="cbox3" onclick="openClose()"/>
+              <label for="cbox3">
+                <img
+                  src="./assets/images/fechado.png"
+                  width="30px"
+                  height="30px"
+                  alt="Icone para abrir/fechar Nutrição"
+                  id="iconOC3"
+                />
+              </label>
+            </div>
+
+            <div id="conttNutr">
+              <p>
+                A tabela abaixo mostra os valores nutricionais por porção sem os
+                recheios adicionais.
+              </p>
+              <ul>
+                <li>
+                  <h3>Calorias</h3>
+                  <span>277kcal</span>
+                </li>
+                <li>
+                  <h3>Carboidrato</h3>
+                  <span>0g</span>
+                </li>
+                <li>
+                  <h3>Proteina</h3>
+                  <span>20g</span>
+                </li>
+                <li>
+                  <h3>Gordura</h3>
+                  <span>22g</span>
+                </li>
+              </ul>
+            </div>
           </section>
         </main>
       </div>
     </div>
+    <script src="./JS/script.js"></script>
   </body>
 </html>

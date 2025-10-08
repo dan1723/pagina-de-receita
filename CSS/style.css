@@ -40,18 +40,21 @@ body {
   align-items: center;
   font-family: "Outfit", sans-serif;
 
-  height: 100vh;
-  padding: 5rem 0;
+  height: 100%;
 
   font-size: 1.6rem;
   font-weight: 400;
+  min-width: 320px;
 
   background-color: var(--Eqqshell);
   color: var(--WengeBrown);
 }
 
 .container {
-  width: 73.6rem;
+  overflow: hidden;
+
+  width: 100%;
+  max-width: 73.6rem;
   height: auto;
   margin: auto 5rem;
   border-radius: 2rem;
@@ -124,27 +127,81 @@ body {
 /* Main */
 main section {
   border-bottom: 0.1rem var(--LightGrey) solid;
-  padding-block: 2.5rem;
+  padding-block: 2rem;
 }
+
+main section .labels {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s;
+
+  padding-right: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+main section .labels:hover {
+  box-shadow: 0 1rem 1rem -1rem var(--Nutmeg);
+  transition: all 0.5s;
+}
+
+main section .labels h2 {
+  cursor: pointer;
+
+  font-size: 2.5rem;
+}
+
+main section .labels h2:hover {
+  text-decoration: underline;
+
+  color: #6e4941;
+}
+
+main section input {
+  appearance: none;
+}
+ 
+section label img {
+  cursor: pointer;
+
+  border-radius: 20%;
+}
+
+section label img:hover {
+  border: 0.1rem var(--Nutmeg) solid;
+}
+
 
 main section ul {
   display: flex;
   flex-direction: column;
   list-style: square;
 
+  margin-top: 1.5rem;
+  margin-left: 2.5rem;
   gap: 1rem;
+
+  color: var(--Nutmeg);
 }
 
 main section p {
-  margin-left: 1.5rem;
+  margin-left: 2rem;
+
+  font-weight: 400;
+  font-size: 1.6rem;
+
+  color: var(--WengeBrown);
 }
 
 /* Ingredientes */
-.ingredients li {
-  margin-left: 3rem;
-  font-size: 1.1rem;
 
-  color: var(--Nutmeg);
+#conttIngr {
+  display: none;
+}
+
+
+.ingredients li {
+  font-size: 1.1rem;
 }
 
 .ingredients h2 {
@@ -159,19 +216,15 @@ main section p {
 }
 
 /* Instruções */
+
+#conttInst {
+  display: none;
+}
+
 .instructions ul {
   list-style: decimal;
 
   font-weight: 700;
-  margin-left: 3rem;
-
-  color: var(--Nutmeg);
-}
-
-.instructions p {
-  font-weight: 400;
-
-  color: var(--WengeBrown);
 }
 
 .instructions h2 {
@@ -180,6 +233,11 @@ main section p {
 }
 
 /* Nutrição */
+
+#conttNutr {
+  display: none;
+}
+
 .nutrition {
   border-bottom: none;
   padding-bottom: 0;
@@ -193,6 +251,10 @@ main section p {
 .nutrition p {
   margin-left: 0 0 2rem 0;
   margin-bottom: 1.5rem;
+}
+
+.nutrition ul {
+  margin-left: 0;
 }
 
 .nutrition li {
@@ -214,6 +276,8 @@ main section p {
   width: 50%;
 
   margin-left: 2.5rem;
+
+  color:  var(--WengeBrown);
 }
 
 .nutrition span {
@@ -221,7 +285,6 @@ main section p {
 
   color: var(--Nutmeg);
 }
-
 
 /* Configuração da responsividade */
 
@@ -259,5 +322,31 @@ main section p {
 
   .hero article p {
     margin-top: 1.5rem;
+  }
+
+  main section p {
+    margin-left: 0.5rem;
+  }
+
+  .nutrition h3 {
+    margin-left: 1rem;
+  }
+
+  .nutrition span{
+    margin-left: 2rem;
+  }
+
+  main section .labels {
+    padding-right: 0;
+  }
+
+  main section .labels h2 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 320px) {
+  main section .labels {
+    margin-right: -2rem;
   }
 }
