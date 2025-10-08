@@ -1,109 +1,55 @@
-# 🥚 Simple Omelette Recipe Page
+# 🍳 Página de Receita - Omelete Simples
 
-Uma página de receita simples e responsiva, criada como desafio do **[Frontend Mentor](https://www.frontendmentor.io)**.  
-O projeto apresenta uma receita clássica de omelete, com design limpo e adaptável para diferentes tamanhos de tela.  
-
----
-
-## 📸 Preview
-
-### 💻 Versão Desktop  
-<img src="./design/desktop-design.jpg" alt="Design desktop da página" width="600">
-
-### 📱 Versão Mobile  
-<img src="./design/mobile-design.jpg" alt="Design mobile da página" width="300">
+Uma página de receita totalmente responsiva e interativa desenvolvida com **HTML**, **CSS** e **JavaScript**.  
+O projeto foi criado como parte de um desafio do **Frontend Mentor**, com o objetivo de praticar estruturação semântica, estilização moderna e interatividade com JavaScript.
 
 ---
 
-## 🧱 Estrutura do Projeto
+## 🖼️ Demonstração
 
-📁 omelette-recipe/
-├── 📁 assets/
-│ └── 📁 images/
-│ ├── image-omelette.jpeg
-│ └── favicon-32x32.png
-├── 📁 CSS/
-│ └── style.css
-├── index.html
-└── README.md
+🔗 **Acesse o site:** [https://dan1723.github.io/pagina-de-receita/](https://dan1723.github.io/pagina-de-receita/)
 
+📦 **Repositório:** [https://github.com/dan1723/pagina-de-receita](https://github.com/dan1723/pagina-de-receita)
 
 ---
 
-## 🧾 Descrição
+## 💡 Funcionalidades
 
-Este projeto é uma **página estática de receita**, que simula um artigo culinário simples.  
-Ele apresenta seções bem definidas:  
-
-- **Imagem de destaque (banner)**  
-- **Título e descrição da receita**  
-- **Tempo de preparo**  
-- **Lista de ingredientes**  
-- **Passo a passo das instruções**  
-- **Tabela nutricional**
+- Exibição da receita de **omelete simples** com layout moderno e responsivo.  
+- Seções organizadas em **Ingredientes**, **Instruções** e **Nutrição**.  
+- Interatividade com **JavaScript** — as seções agora podem ser **abertas e fechadas** clicando nos ícones, tornando a página mais dinâmica e intuitiva.  
+- Estrutura semântica com uso correto de tags HTML5.  
+- Responsividade aprimorada para diferentes tamanhos de tela (desktop, tablet e mobile).
 
 ---
 
-## 🧠 Conceitos e Tecnologias Utilizadas
+## 🧱 Tecnologias Utilizadas
 
-### 🔹 HTML5
-- Estrutura semântica usando `<main>`, `<section>`, `<article>` e `<ul>`.
-- Organização lógica e de fácil leitura.
-
-### 🔹 CSS3
-- Uso de **variáveis CSS** (`:root`) para facilitar manutenção de cores.
-- **Tipografia personalizada** com importação de fontes do Google Fonts:
-  - `Young Serif` para títulos.
-  - `Outfit` para o corpo do texto.
-- Layout responsivo com **flexbox** e **media queries**.
-- Estilização clean, com **paleta suave** e tipografia legível.
-- Uso de **unidades relativas (rem)** para garantir escalabilidade.
-
----
-
-## 🎨 Paleta de Cores
-
-| Nome da Variável | Cor | Descrição |
-|------------------|------|------------|
-| `--Nutmeg` | hsl(14, 45%, 36%) | Cor principal dos títulos e detalhes |
-| `--DarkRaspberry` | hsl(332, 51%, 32%) | Destaques secundários |
-| `--RoseWhite` | hsl(330, 100%, 98%) | Fundo suave para caixas de destaque |
-| `--Eqqshell` | hsl(30, 54%, 90%) | Cor de fundo da página |
-| `--LightGrey` | hsl(30, 18%, 87%) | Linhas divisórias e bordas |
-| `--WengeBrown` | hsl(30, 10%, 34%) | Texto padrão |
-| `--DarkCharcoal` | hsl(24, 5%, 18%) | Títulos escuros |
-
----
-
-## 📱 Responsividade
-
-O design foi otimizado para telas menores usando **media queries**:
-
-```css
-@media (max-width: 565px) {
-  /* Ajustes no layout e tipografia */
-}
+- **HTML5** — Estrutura semântica da página  
+- **CSS3** — Estilização responsiva com variáveis e media queries  
+- **JavaScript** — Função `openClose()` para alternar a exibição das seções  
+- **Google Fonts** — Tipografia personalizada (`Outfit` e `Young Serif`)
 
 ---
 
 ## 🚀 Melhorias Futuras (Sugestões)
 
-- Adicionar **animações suaves** nas transições de seções.  
-- Implementar **modo escuro** com `localStorage`.  
-- Converter o layout em um **componente React** reutilizável.  
-- Incluir botão de **imprimir receita** ou **baixar PDF**.  
+- Adicionar **animações suaves** nas transições de abertura e fechamento das seções.  
+- Implementar **modo escuro (dark mode)** com persistência via `localStorage`.  
+- Converter o layout em um **componente React reutilizável**.  
+- Incluir **botão para imprimir a receita** ou **baixar em PDF**.
 
 ---
 
 ## 🧑‍💻 Autor
 
-Desenvolvido com por **[Danilo Fernandes Gomes]**  
-📧 **Contato:** dan.gomes1723@gmail.com  
-🔗 **GitHub:** [github.com/dan1723](https://github.com/dan1723)
+Desenvolvido por **Danilo**  
+📧 Contato: dan.gomes1723@gmail.com  
+🔗 GitHub: [github.com/dan1723](https://github.com/dan1723)
 
 ---
 
 ## 🪪 Licença
 
-Este projeto é de uso **educacional** e foi desenvolvido como exercício do desafio **Frontend Mentor**.  
-Você pode modificá-lo e utilizá-lo livremente para fins pessoais e de aprendizado.
+Este projeto é de uso educacional e foi desenvolvido como exercício do desafio **Frontend Mentor**.  
+Você pode modificá-lo e utilizá-lo livremente para fins **pessoais** e de **aprendizado**.
